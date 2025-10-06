@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#F5F1F1">
+    <meta name="msapplication-TileColor" content="#F5F1F1">
+
+    <!-- Social Images -->
+    <meta content="res/illustration_7.jpg" itemprop="image">
+    <meta content="res/illustration_7.jpg" name="twitter:image">
+    <meta content="res/illustration_7.jpg" property="og:image">
+
+    <!-- Titles -->
+    <meta content="Muhammadqodir · Bibihadicha" itemprop="name">
+    <meta content="Muhammadqodir · Bibihadicha" name="twitter:title">
+    <meta content="Muhammadqodir · Bibihadicha" property="og:title">
+    <meta content="Muhammadqodir · Bibihadicha" property="og:site_name">
+
+    <!-- Descriptions -->
+    <meta content="Nonushta taklifnoma">
+    <meta content="Nonushta taklifnoma" itemprop="description">
+    <meta content="Nonushta taklifnoma" name="twitter:description">
+    <meta content="Nonushta taklifnoma" property="og:description">
+
+    <!-- Favicons Icons -->
+    <link rel="apple-touch-icon" href="res/icon.jpg" sizes="180x180">
+    <link rel="icon" href="res/icon.jpg" sizes="32x32" type="image/png">
+    <link rel="icon" href="res/icon.jpg" sizes="16x16" type="image/png">
+    <link rel="mask-icon" href="res/icon.jpg" color="#23372d">
+    <link rel="shortcut icon" href="res/icon.jpg">
+
+
+    <!-- Page Title -->
+    <title>DADAXON · DIYORAXON</title>
+
+    <!-- Styles -->
+    <link href="res/main.min.css" rel="stylesheet">
+
+    <!-- Стили для галереи и таймера -->
+    <style>
+        .gallery-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .gallery-title {
+            font-family: Campton;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Стили для таймера */
+        .countdown-container {
+            margin: 20px 0;
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .time-unit {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            min-width: 80px;
+        }
+
+        .time-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            display: block;
+            font-family: Campton;
+        }
+
+        .time-label {
+            font-size: 0.9rem;
+            color: #666;
+            display: block;
+            margin-top: 5px;
+            font-family: Campton;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+                padding: 0 10px;
+            }
+
+            .gallery-img {
+                height: 200px;
+            }
+
+            .gallery-title {
+                font-size: 24px;
+            }
+
+            .countdown-timer {
+                gap: 10px;
+            }
+
+            .time-unit {
+                min-width: 70px;
+                padding: 10px;
+            }
+
+            .time-number {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .time-unit {
+                min-width: 60px;
+                padding: 8px;
+            }
+
+            .time-number {
+                font-size: 1.3rem;
+            }
+
+            .time-label {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="opening">
+        <h1 class="opening-title">
+            <span>DADAXON</span><br>
+            <span>·</span><br>
+            <span>DIYORAXON</span>
+        </h1>
+    </section>
+
+    <figure class="date" style="text-align: center; margin-top: 0px !important; margin-bottom: 0px !important;">
+        <p class="optional"
+            style="font-weight: bold; font-family: Campton; font-size: 25px; max-width: 500px; margin: auto;">
+            Xurmatli mehmonimiz!
+        </p>
+
+        <p class="optional" style="font-family: Campton; font-size: 25px; max-width: 500px; margin: auto;">
+            Sizni "NIKOH" toyimiz munosabati bilan soat 16:00 da yoziladigan Bazm dasturxonimizga
+            taklif etamiz.
+        </p><br>
+        <hr style="width: 120px; border: 0; border-top: 1px solid #aa8888; margin: 10px auto;">
+        <p class="optional" style="font-family: Campton; font-size: 25px; max-width: 500px; margin: auto;">
+            Bahtli onimizda biz uchun qalbingizdagi eng yahshi tilaklaringiz bilan yonimizda
+            bolishingizni so'raymiz.
+        </p><br>
+
+        <small style="font-family: Campton;">
+            <span id="days"></span> kun
+        </small>
+        <small style="font-family: Campton;">
+            <span id="hours"></span> soat
+        </small>
+        <small style="font-family: Campton;">
+            <span id="minutes"></span> daqiqa
+        </small>
+        <small style="font-family: Campton;">
+            <span id="seconds"></span> sekund qoldi
+        </small>
+        <div style="font-family: Campton; font-size: 2rem; margin-top: 20px;">
+            18 · 10 · 2025
+        </div>
+        <small style="font-family: Campton;">
+            Shanba, soat: 16:00
+        </small>
+        <hr style="width: 120px; border: 0; border-top: 1px solid #aaa; margin: 10px auto;">
+        <small style="font-family: Campton;">
+            Far'gona shaxar,"Labi Xo'vuz" toyxonasi.
+        </small>
+    </figure>
+
+    <figure class="illustration-container" style="margin-top: 40px !important;">
+        <img class="illustration" src="res/illustration_3.jpg">
+    </figure>
+
+
+    <!-- 💐 Креативная галерея -->
+    <section class="gallery-section">
+        <h2 style="font-family: Campton;" class="gallery-title">Bizning Baxtli Lahzalar</h2>
+        <hr class="gallery-line">
+
+        <div class="creative-gallery">
+            <div class="gallery-main">
+                <div class="large-item">
+                    <img src="res/zags/photo4.jpg" alt="Baxtli lahzalarimiz">
+                </div>
+
+                <div class="small-items">
+                    <div class="small-item">
+                        <img src="res/zags/photo6.jpg" alt="Baxtli lahzalarimiz">
+                    </div>
+                    <div class="small-item">
+                        <img src="res/zags/photo3.jpg" alt="Baxtli lahzalarimiz">
+                    </div>
+                    <div class="small-item">
+                        <img src="res/zags/photo2.jpg" alt="Baxtli lahzalarimiz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* ===============================
+     💐 Секция галереи (уменьшенная)
+  =============================== */
+        .gallery-section {
+            text-align: center;
+            margin: 3.5rem auto;
+            /* 🔹 было 5rem — уменьшили */
+            padding: 0 15px;
+            /* 🔹 чуть меньше отступы */
+            font-family: Campton, sans-serif;
+            background: transparent;
+            /* без фона */
+        }
+
+        .gallery-title {
+            font-size: 1.2rem;
+            /* 🔹 было 2rem */
+            color: #905858;
+            margin-bottom: 0.8rem;
+        }
+
+        .gallery-line {
+            width: 150px;
+            /* 🔹 было 120px */
+            border: 0;
+            border-top: 2px solid #d4a76a;
+            margin: 0 auto 2.2rem;
+            /* 🔹 меньше отступ */
+        }
+
+        .creative-gallery {
+            max-width: 750px;
+            /* 🔹 было 1100px */
+            margin: 0 auto;
+        }
+
+        .gallery-main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 12px;
+            /* 🔹 было 15px */
+            align-items: stretch;
+        }
+
+        .large-item,
+        .small-item {
+            border-radius: 12px;
+            /* 🔹 чуть меньше радиус */
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .large-item img,
+        .small-item img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+        }
+
+        .small-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .small-item img {
+            aspect-ratio: 1 / 1;
+        }
+
+        /* ===============================
+     📱 Адаптивность
+  =============================== */
+        @media (max-width: 768px) {
+            .gallery-main {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .small-items {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .small-item img {
+                aspect-ratio: 3 / 4;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-section {
+                margin: 2.5rem auto;
+                padding: 0 10px;
+            }
+
+            .gallery-title {
+                font-size: 1.5rem;
+            }
+
+            .gallery-line {
+                margin: 0 auto 1.6rem;
+            }
+
+            .small-items {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        .after-gallery-spacing {
+            margin: 40px 0;
+            height: 1px;
+            background: transparent;
+        }
+    </style>
+
+    <figure class="illustration-container" style="margin-top: 40px !important;">
+        <img class="illustration" src="res/illustration_6.jpg">
+    </figure>
+
+    <div class="text">
+        <p class="optional" style="font-family: Campton; margin-bottom: 25px;">
+            Manzil:
+        </p>
+        <div style="position:relative;overflow:hidden;">
+            <iframe
+                src="https://yandex.com/map-widget/v1/?ll=71.760793%2C40.402161&mode=search&oid=168886642882&ol=biz&sctx=ZAAAAAgBEAAaKAoSCWjnNAu08FFAEcWrrG2KM0RAEhIJU0Da%2FwBrdT8RlZ1%2BUBcpZD8iBgABAgMEBSgKOABA4FBIAWJHcmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvUmVhcnJhbmdlQnlBdWN0aW9uL0NhY2hlL1RvcExpbWl0PTNiRnJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL1JlYXJyYW5nZUJ5QXVjdGlvbi9DYWNoZS9FbmFibGVkPTFqBXdvcmxknQHNzMw9oAEAqAEAvQEIa1j4wgEGwtG2k%2FUEggIKTGFiaSBIb3Z1eooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=71.760793%2C40.402161&sspn=0.013704%2C0.006450&text=Labi%20Hovuz&z=16.6"
+                width="70%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+            </iframe>
+        </div>
+    </div>
+
+    <figure class="illustration-container" style="margin-top: 40px !important;">
+        <img class="illustration" src="res/illustration_4.jpg">
+    </figure>
+
+    <figure class="illustration-container illustration-container-small illustration-container-final"
+        style="max-width: 500px; margin: 0px auto;">
+        <img class="illustration" src="res/zags/photo7.png" style="width: 100%; transform: scale(1.2);">
+    </figure>
+
+    <script src="countdown.js"></script>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const images = document.querySelectorAll('.slides img');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let index = 0;
+
+        function showSlide(i) {
+            if (i >= images.length) index = 0;
+            if (i < 0) index = images.length - 1;
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            index++;
+            showSlide(index);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index--;
+            showSlide(index);
+        });
+
+        // Автоматическая прокрутка каждые 5 секунд
+        setInterval(() => {
+            index++;
+            showSlide(index);
+        }, 5000);
+    </script>
+
+
+</body>
+
+</html>
