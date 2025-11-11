@@ -5,7 +5,7 @@
         day = hour * 24;
 
   // Дата события
-  const eventDate = new Date('2025-10-18T06:00:00').getTime();
+  const eventDate = new Date('2025-11-22T06:00:00').getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
